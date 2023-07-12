@@ -507,7 +507,7 @@ if [ -f .webtitle ]; then
 else
   read -e -p "网站标题(回车默认标题)：" TITLE
   if [ -z "${TITLE}" ];then
-      TITLE="ChatGPT WEB"
+      TITLE="虫星"
       INFO "网站标题命名为：${TITLE}"
       sed -i "s/\${SITE_TITLE}/${TITLE}/g" ${ORIGINAL}/${CHATDIR}/index.html
   else

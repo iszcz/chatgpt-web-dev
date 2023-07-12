@@ -29,7 +29,7 @@ bash -c "$(wget -q -O- https://raw.githubusercontent.com/dqzboy/chatgpt-web/main
 bash -c "$(wget -q -O- https://raw.githubusercontent.com/dqzboy/chatgpt-web/main/ChatGPT-Web-Admin/install/ChatGPT-Web-Admin_R.sh)"
 
 # Ubuntu or Debian
-bash -c "$(wget -q -O- https://raw.githubusercontent.com/dqzboy/chatgpt-web/main/ChatGPT-Web-Admin/install/ChatGPT-Web-Admin_U.sh)"
+bash -c "$(wget -q -O- https://raw.githubusercontent.com/iszcz/chatgpt-web-dev/main/ChatGPT-Web-Admin/install/ChatGPT-Web-Admin_U.sh)"
 ```
 
 ## 执行过程

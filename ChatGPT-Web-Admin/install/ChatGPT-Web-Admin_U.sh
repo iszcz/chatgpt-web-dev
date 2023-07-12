@@ -522,17 +522,17 @@ echo "${TITLE}" > .webtitle
 function BUILDWEB() {
 INFO "《前端构建中，请稍等...》"
 # 安装依赖
-pnpm bootstrap 2>&1 >/dev/null | grep -E "error|fail|warning"
+pnpm bootstrap
 # 打包
-pnpm build | grep -E "ERROR|ELIFECYCLE|WARN|*built in*"
+pnpm build
 }
 
 function BUILDSEV() {
 INFO "《后端构建中，请稍等...》"
 # 安装依赖
-pnpm install 2>&1 >/dev/null | grep -E "error|fail|warning"
+pnpm install
 # 打包
-pnpm build | grep -E "ERROR|ELIFECYCLE|WARN|*Build success*"
+pnpm build
 }
 
 

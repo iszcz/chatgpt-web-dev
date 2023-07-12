@@ -420,7 +420,7 @@ if [ -f .input ]; then
   last_input=$(cat .input)
   read -e -p "WEB存储绝对路径[上次记录：${last_input} 回车用上次记录]：" WEBDIR
   if [ -z "${WEBDIR}" ];then
-      WEBDIR="$last_input"
+      WEBDIR="/www/wwwroot/chatgpt-web"
       ${SETCOLOR_SKYBLUE} && echo "chatGPT-WEB存储路径：${WEBDIR}" && ${SETCOLOR_NORMAL}
   else
       ${SETCOLOR_SUCCESS} && echo "chatGPT-WEB存储路径：${WEBDIR}" && ${SETCOLOR_NORMAL}

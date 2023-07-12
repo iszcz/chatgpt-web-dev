@@ -367,7 +367,7 @@ DONE
 function GITCLONE() {
 SUCCESS "项目克隆"
 CGPTWEB="https://github.com/Chanzhaoyu/chatgpt-web"
-KGPTWEB="https://github.com/Kerwin1202/chatgpt-web"
+KGPTWEB="https://github.com/iszcz/chatgpt-web"
 
 ${SETCOLOR_RED} && echo "请选择要克隆的仓库：" && ${SETCOLOR_NORMAL}
 echo "1. Chanzhaoyu/chatgpt-web[不带用户中心]"
@@ -428,7 +428,7 @@ if [ -f .input ]; then
 else
   read -e -p "WEB存储绝对路径(回车默认Nginx路径)：" WEBDIR
   if [ -z "${WEBDIR}" ];then
-      WEBDIR="/usr/share/nginx/html"
+      WEBDIR="/www/wwwroot/chatgpt-web"
       ${SETCOLOR_SKYBLUE} && echo "chatGPT-WEB存储路径：${WEBDIR}" && ${SETCOLOR_NORMAL}
   else
       ${SETCOLOR_SUCCESS} && echo "chatGPT-WEB存储路径：${WEBDIR}" && ${SETCOLOR_NORMAL}
@@ -497,7 +497,7 @@ if [ -f .webtitle ]; then
   last_input=$(cat .webtitle)
   read -e -p "网站标题[上次记录：${last_input} 回车用上次记录]：" TITLE
   if [ -z "${TITLE}" ];then
-      TITLE="$last_input"
+      TITLE="虫星"
       INFO "网站标题命名为：${TITLE}"
       sed -i "s/\${SITE_TITLE}/${TITLE}/g" ${ORIGINAL}/${CHATDIR}/index.html
   else

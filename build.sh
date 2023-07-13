@@ -155,7 +155,7 @@ fi
 
 
 function WEBTITLE() {
-      TITLE="虫星"
+      TITLE="智能AI"
       sed -i "s/\${SITE_TITLE}/${TITLE}/g" ${ORIGINAL}/${CHATDIR}/index.html
 }
 

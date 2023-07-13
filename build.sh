@@ -310,6 +310,7 @@ function DELSOURCE() {
 function main() {
     CHECKFIRE
     GITCLONE
+    WEBINFO
     BUILD
     NGINX
     DELSOURCE

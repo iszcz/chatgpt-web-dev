@@ -98,7 +98,7 @@ DONE
 }
 
 function WEBINFO() {
-      WEBDIR="/www/chatgpt-web"
+      WEBDIR="/www/chatgpt-web/"
       ${SETCOLOR_SUCCESS} && echo "chatGPT-WEB存储路径：${WEBDIR}" && ${SETCOLOR_NORMAL}
 }
 

@@ -311,6 +311,7 @@ function main() {
     CHECKFIRE
     GITCLONE
     WEBINFO
+    WEBTITLE
     BUILD
     NGINX
     DELSOURCE
